@@ -1,0 +1,62 @@
+body{
+  background: black;
+  width: 90%;
+  margin-left: 5%;
+  font-family: 'Dancing Script', cursive;
+
+}
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 0 20px;
+
+}
+#cabezera{
+  display: flex;
+  flex-direction: row;
+}
+#titulo{
+  text-align: left;
+  margin: 5px;
+  width: 50%;
+  text-shadow: 2px 2px #02010a;
+}
+#menu, a{
+  text-align: right;
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  color: white;
+  text-decoration: none;
+}
+img{
+  box-shadow: 2px 2px  #02010a;
+}
+#contenido{
+  display: flex;
+  flex-direction: column;
+}
+.contenedor{
+  display: flex;
+  flex-direction: row;
+}
+#central{
+  background: #82c3a6;
+}
+#central .contenedor > div {
+	position: center;
+  width: : 80%;
+  padding: 0 10% ;
+  margin: 10px;
+	}
+#secundaria{
+  background: #d5c75f;
+}
+#secundaria .contenedor > div {
+	width: 50%;
+  margin: 10px;
+}
+footer{
+  background: #C6d5c5;
+}
