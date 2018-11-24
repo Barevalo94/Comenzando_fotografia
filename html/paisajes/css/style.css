@@ -35,30 +35,17 @@ img{
   display: flex;
   flex-direction: column;
 }
-#central{
-  background: #82c3a6;
-}
-#central .contenedor > div {
-	position: center;
-  width: : 80%;
-  padding: 0.5% 10% ;
-  margin: 1%;
-	}
-#secundaria{
+#paisajes{
   background: #d5c75f;
   display: flex;
   flex-direction: row;
   padding: 0 1%;
 }
-#secundaria > div {
-	width: 50%;
+#paisajes > div {
+	width: 33.3%;
   padding: 0.5% 1%;
-
 }
-#secundaria, a{
-  color: black;
-  text-decoration: none;
-  text-align: center;
+a{
   font-size: 1.2em;
 }
 footer{
@@ -66,7 +53,6 @@ footer{
   border-radius: 0 0 10px 10px;
   padding: 0 2%;
 }
-
 #pie{
   display: flex;
   flex-direction: row;
@@ -76,7 +62,6 @@ footer{
   padding:  0 2.5% ;
   text-align: justify;
 }
-
 @media (max-width: 420px) {
   #cabezera, #contenido, #paisajes, #pie{
     flex-direction: column;
