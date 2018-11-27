@@ -2,6 +2,7 @@ body{
   background: black;
   width: 90%;
   margin-left: 5%;
+  margin-top: 0.2%;
   font-family: 'Dancing Script', cursive;
 }
 header{
@@ -9,6 +10,19 @@ header{
   border-radius: 10px 10px 0 0;
   color: white;
   padding: 0 2%;
+  animation: Subir;
+  animation-duration: 2s;
+}
+@-webkit-keyframes Subir{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+      margin-top:-5%;
+  }
+  100%{
+      margin-top:0%;
+  }
 }
 #cabezera{
   display: flex;
@@ -38,11 +52,10 @@ img{
 #central{
   background: #82c3a6;
 }
-#central .contenedor > div {
+#central > div {
 	position: center;
-  width: : 80%;
-  padding: 0.5% 10% ;
-  margin: 1%;
+  width: : 100%;
+  padding: 1% 10% ;
 	}
 #secundaria{
   background: #d5c75f;
@@ -51,9 +64,9 @@ img{
   padding: 0 1%;
 }
 #secundaria > div {
+  position: center;
 	width: 50%;
-  padding: 0.5% 1%;
-
+  padding:1% 0;
 }
 #secundaria, a{
   color: black;
@@ -61,34 +74,50 @@ img{
   text-align: center;
   font-size: 1.2em;
 }
+#paisajes img{
+  transform: rotate();
+	transition-duration: 1s;
+}
+#paisajes img:hover{
+   transform: rotate(10deg);
+   box-shadow:2px 2px #82c3a6;
+}
+#retratos img{
+  transform: translate();
+	transition-duration: 1s;
+}
+#retratos img:hover{
+   transform: translate(20px, -5px);
+   box-shadow:2px 2px #82c3a6;
+}
 footer{
   background: #C6d5c5;
   border-radius: 0 0 10px 10px;
   padding: 0 2%;
 }
-
 #pie{
   display: flex;
   flex-direction: row;
+  padding: 5%;
 }
 #pie > div{
   width: 25%;
   padding:  0 2.5% ;
   text-align: justify;
 }
-
-@media (max-width: 420px) {
-  #cabezera, #contenido, #paisajes, #pie{
+@media (max-width: 900px) {
+  #cabezera, #contenido, #pie, #secundaria{
     flex-direction: column;
   }
   #titulo, #menu{
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
-  #paisajes > div {
-  	width: 90%;
+  #secundaria > div{
+    width: 100%;
   }
   #pie > div{
-    width: 90%;
+    width: 100%;
+    padding: 3% 0;
   }
 }

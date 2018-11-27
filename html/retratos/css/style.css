@@ -2,6 +2,7 @@ body{
   background: black;
   width: 90%;
   margin-left: 5%;
+  margin-top: 0.2%;
   font-family: 'Dancing Script', cursive;
 }
 header{
@@ -9,6 +10,19 @@ header{
   border-radius: 10px 10px 0 0;
   color: white;
   padding: 0 2%;
+  animation: Subir;
+  animation-duration: 2s;
+}
+@-webkit-keyframes Subir{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+      margin-top:-5%;
+  }
+  100%{
+      margin-top:0%;
+  }
 }
 #cabezera{
   display: flex;
@@ -45,6 +59,18 @@ img{
 	width: 33.3%;
   padding: 0.5% 1%;
 }
+#retratos1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+#retratos2, #retratos4, #retratos6{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+#retratos3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
 a{
   font-size: 1.2em;
 }
@@ -57,25 +83,26 @@ footer{
 #pie{
   display: flex;
   flex-direction: row;
+  padding: 5%;
 }
 #pie > div{
   width: 25%;
-  padding:  0 2.5% ;
   text-align: justify;
+
 }
 
-@media (max-width: 420px) {
+@media (max-width: 900px) {
   #cabezera, #contenido, #retratos, #pie{
     flex-direction: column;
   }
   #titulo, #menu{
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
   #retratos > div {
-  	width: 90%;
+  	width: 100%;
   }
   #pie > div{
-    width: 90%;
+    width: 100%;
   }
 }
